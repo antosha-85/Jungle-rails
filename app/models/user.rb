@@ -1,8 +1,16 @@
 class User < ActiveRecord::Base
-    # attr_accessor :password_digest
+    def self.authenticate_with_credentials(email, password)
+        user = User.find_by_email(email)
+        # If the user exists AND the password entered is correct.
+        if user && user.authenticate(password)
+            user
+        else 
+            nil
+        end
+    end 
 
     has_secure_password
     validates :name, presence: true
-    validates :email, presence: true, uniqueness: {case_sensitive: false}
+    validates :email, presence: true, uniqueness: {case_sensitive: false}, allow_blank:true
     validates_length_of :password, minimum: 5
 end
