@@ -19,6 +19,7 @@ RSpec.configure do |config|
     config.before(:each) do
       DatabaseCleaner.strategy = :transaction
     end
+    
   
     config.before(:each, type: :feature) do
       # :rack_test driver's Rack app under test shares database connection
