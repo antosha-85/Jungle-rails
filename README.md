@@ -30,4 +30,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 Main page
 !["Main page"](https://github.com/antosha-85/Jungle-rails/blob/master/vendor/assets/img/Main%20page.png)
 Signup
-
+!["Signup"](https://github.com/antosha-85/Jungle-rails/blob/master/vendor/assets/img/Signup.png)
+Admin Categories
+!["Admin Categories"](https://github.com/antosha-85/Jungle-rails/blob/master/vendor/assets/img/Admin%20categories.png)
