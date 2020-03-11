@@ -27,3 +27,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Final Product
+Main page
+(https://github.com/antosha-85/Jungle-rails/blob/master/vendor/assets/img/Main%20page.png)
+Signup
+
