@@ -40,13 +40,13 @@ RSpec.describe User, type: :model do
     it "validates there are no white spaces" do
     @new_user = User.create(name: "name", email: "   EMAIL@test.com   ", password: "password", password_confirmation: "password")
     expect(@new_user.email).to eq("   EMAIL@test.com   ")
-      p @new_user.errors
+      # p @new_user.errors
     end
     it "validates there is a user returned" do
       @new_user = User.authenticate_with_credentials("   EMAIL@test.com   ", "password")
       expect(@user.errors).to be_empty
       # expect(@new_user.email).to eq("email@test.com")
-      p "hello world", @new_user
+      # p "hello world", @new_user
     end
     it "validates there is a nil returned with empty parameters" do
       @new_user = User.authenticate_with_credentials("", "")

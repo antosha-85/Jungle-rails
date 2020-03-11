@@ -25,7 +25,6 @@ RSpec.feature "Visitor clicks the Add to Cart button for a product and their car
     click_button("Add", :match => :first)
     expect(page).to have_link('My Cart (1)')
     save_screenshot
-    puts page.html
 
   end
 end
